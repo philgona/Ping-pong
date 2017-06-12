@@ -2,39 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
     <title>Ping-Pong</title>
   </head>
   <body>
-    <div class="row">
-      <div class="col-md-12" id="rose">
-        <img src="pingpong.jpeg" alt="">
-      <h1><strong>Ping-Pong</strong></h1>
+    <div class="container-fluid">
+      <div class="row" id="first-row">
+        <div class="col-md-12" id="rose">
+          <img src="pingpong.jpeg" alt="">
+        <h1><strong>Ping-Pong</strong></h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3" id="seth">
-        <h2>About Ping-Pong</h2>
-          <h3>Created by Philgona</h3>
-          <p>Kit Philgona</p>
-          <p>philgona/github.io</p>
-      </div>
-      <div class="col-md-9" id="reli">
-        <h2><strong>Let's Play!</strong></h2>
-        <h3>Rules:</h3>
-        <p>Ping-pong will count upto your number from 1 with the following exception:</p>
-        <ol>
-          <li>Number divisible by 3 are replaced with 'Ping'</li>
-          <li>Number divisible by 5 are replaced with 'Pong'</li>
-          <li>Number divisible by 15 are replaced with'pingpong'</li>
-        </ol>
-        <form id="Ping-pong">
-          <div class="form-group">
-            <label for="input number">Enter your number here:</label>
-            <input id="Ping-pong" type="text"><button type="submit" class="btn">ping pong</button>
-          </div>
+      <div class="row" id="second-row">
+        <div class="col-md-3" id="seth">
+          <h2>About Ping-Pong</h2>
+            <h3>Created by Philgona</h3>
+            <p>Kit Philgona</p>
+            <p>philgona/github.io</p>
+        </div>
+        <div class="col-md-9" id="reli">
+          <h2><strong>Let's Play!</strong></h2>
+          <h3>Rules:</h3>
+          <p>Ping-pong will count upto your number from 1 with the following exception:</p>
+          <ol>
+            <li>Number divisible by 3 are replaced with 'Ping'</li>
+            <li>Number divisible by 5 are replaced with 'Pong'</li>
+            <li>Number divisible by 15 are replaced with'pingpong'</li>
+          </ol>
+          <form id="ping-pong">
+            <div class="form-group">
+              <label for="inputtedNumber">Enter your number here:</label>
+              <input id="inputtedNumber" type="text"> <button type="submit" class="qwas">ping pong!</button>
+            </div>
+          </form>
+          <div id="result">
+            <ul class="onlist" id="resultList">
 
-        </form>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
